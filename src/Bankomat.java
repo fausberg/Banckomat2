@@ -18,7 +18,7 @@ public class Bankomat {
             anotherUserCheck.plusBalance(summ);
             userCheck.minusBalance(summ);
             String massage = "Перевод с карты на карту на сумму " + summ;
-            String massageAnotherUser = "Пополнение на сумму" + summ;
+            String massageAnotherUser = "Пополнение на сумму " + summ;
             user.info(user.getTransaction(), massage);
             anotherUser.info(anotherUser.getTransaction(), massageAnotherUser);
         }else{
