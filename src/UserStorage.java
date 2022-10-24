@@ -27,7 +27,7 @@ public class UserStorage {
         return new User();
     }
 
-    public User getUserPIN(String PIN) {
+    public User getUserOnPIN(String PIN) {
         for (User anotheruser : users) {
             if (PIN.equals(anotheruser.getPIN(anotheruser.getCard()))) {
                 return anotheruser;
@@ -36,7 +36,7 @@ public class UserStorage {
         System.out.println("Неправильный пин-код");
         System.out.println("Введите снова пин-код");
         PIN = new Scanner(System.in).nextLine();
-        getUserPIN(PIN);
+        getUserOnPIN(PIN);
         return new User();
     }
 }

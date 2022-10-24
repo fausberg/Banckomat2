@@ -6,7 +6,7 @@ public class Register {
         System.out.println("Добро пожаловать");
         System.out.println("Введите пин код");
         String PIN = new Scanner(System.in).nextLine();
-        User user = users.getUserPIN(PIN);
+        User user = users.getUserOnPIN(PIN);
         return user;
     }
 }
