@@ -32,8 +32,7 @@ public class UserStorage {
         System.out.println("Неправильный пин-код");
         System.out.println("Введите снова пин-код");
         PIN = new Scanner(System.in).nextLine();
-        getUserOnPIN(PIN);
-        return new User();
+        return getUserOnPIN(PIN);
     }
 }
 
