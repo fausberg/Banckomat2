@@ -33,7 +33,7 @@ public class UserStorage {
                 return anotheruser;
             }
         }
-        System.out.println("Неправильный пин код");
+        System.out.println("Неправильный пин-код");
         System.out.println("Введите снова пин-код");
         PIN = new Scanner(System.in).nextLine();
         getUserPIN(PIN);
