@@ -50,7 +50,7 @@ public class User {
         transaction.transactionInfo(massage);
     }
 
-    public void getinfo(Transaction transaction){
+    public void getInfo(Transaction transaction){
         transaction.getInfo();
     }
 }
