@@ -60,6 +60,6 @@ public class Bankomat {
     }
 
     public void info(User user){
-        user.getinfo(user.getTransaction());
+        user.getInfo(user.getTransaction());
     }
 }

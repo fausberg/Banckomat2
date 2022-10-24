@@ -14,15 +14,5 @@ public class Examination {
         return sum;
     }
 
-    public String examinationCardNumber(String cardNumber) {
-        cardNumber = cardNumber.replaceAll(" ", "");
-        String regex = "[0-9]+";
-        if (!cardNumber.matches(regex) || cardNumber.length() != 16) {
-            System.out.println("Неправильно введён номер карты. Введите его снова");
-            cardNumber = new Scanner(System.in).nextLine();
-            cardNumber = cardNumber.replaceAll(" ", "");
-            examinationCardNumber(cardNumber);
-        }
-        return cardNumber;
-    }
+
 }

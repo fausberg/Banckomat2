@@ -11,10 +11,6 @@ public class Check {
         return balance;
     }
 
-    public String getCheckNumber() {
-        return checkNumber;
-    }
-
     public void plusBalance(double balance) {
         this.balance += balance;
     }

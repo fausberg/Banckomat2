@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class UserStorage {
 
-    boolean user = false;
-
     public ArrayList<User> users = new ArrayList<>();
 
     public void setUsers() {
@@ -14,7 +12,6 @@ public class UserStorage {
     }
 
     public User getUser(String cardNumber) {
-        User transferUser = new User();
         for (User anotheruser : users) {
             if (cardNumber.equals(anotheruser.getCardNumber(anotheruser.getCard()))) {
                 return anotheruser;
@@ -23,8 +20,7 @@ public class UserStorage {
         System.out.println("такого пользователя нет");
         System.out.println("Введите номер карты снова");
         cardNumber = new Scanner(System.in).nextLine();
-        getUser(cardNumber);
-        return new User();
+        return getUser(cardNumber);
     }
 
     public User getUserOnPIN(String PIN) {
